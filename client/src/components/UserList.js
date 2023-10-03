@@ -17,7 +17,7 @@ function UserList() {
     setLoading(true);
 
     axios
-      .get('http://localhost:3000/api/users')
+      .get('https://asmatech.onrender.com/api/users')
       .then((response) => {
         setUsers(response.data);
         setLoading(false);
@@ -32,7 +32,7 @@ function UserList() {
     setLoading(true);
 
     axios
-      .get(`http://localhost:3000/api/users/search?query=${searchRef.current.value}`)
+      .get(`https://asmatech.onrender.com/api/users/search?query=${searchRef.current.value}`)
       .then((response) => {
         setUsers(response.data);
         setLoading(false);
